@@ -47,7 +47,4 @@ public class FacturaTelefono {
     public double obtenerValorFactura(){
         return valorFactura;
     }
-    
-    
-    
 }
