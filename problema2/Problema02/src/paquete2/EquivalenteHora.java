@@ -20,7 +20,7 @@ public class EquivalenteHora {
     }
 
     public void calcularSegundos() {
-        segundos = minutos / 60;
+        segundos = (horas * 3600);
     }
 
     public void calcularDias() {

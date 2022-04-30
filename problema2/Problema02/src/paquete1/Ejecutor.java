@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package paquete1;
 
 import paquete2.EquivalenteHora;
@@ -20,7 +17,7 @@ public class Ejecutor {
         EquivalenteHora horaU = new EquivalenteHora();
         EquivalenteHora horaD = new EquivalenteHora();
         //Variables
-        double horasU = 58.6;
+        double horasU = 24;
         double horasD = 20.45;
         //Metodos Establecer
         horaU.establecerHoras(horasU);
@@ -35,11 +32,16 @@ public class Ejecutor {
         horaD.calcularDias();
         //Metodos Obtener
         System.out.printf("Transformacion de Horas\n\nHoras: %.2f\n"
-                + "Minutos: %.2f\nSegundos: %.2f\nDias: %.2f\n\nHoras:"
+                + "Minutos: %.2f\nSegundos: %.2f\nDias: %.2f\n\nHoras: %.2f\n"
+                + "Minutos: %.2f\nSegundos: %.2f\nDias: %.2f\n"
                 ,horaU.obtenerHoras()
                 ,horaU.obtenerMinutos()
                 ,horaU.obtenerSegundos()
-                ,horaU.obtenerDias());
+                ,horaU.obtenerDias()
+                ,horaD.obtenerHoras()
+                ,horaD.obtenerMinutos()
+                ,horaD.obtenerSegundos()
+                ,horaD.obtenerDias());
     }
 
 }
